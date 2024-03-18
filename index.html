@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>COMP1073 Assignment 3</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <h1>Pizza Order Form</h1>
+    <form id="pizza-form" action="" method="post">
+        <label for="size">Pizza Size:</label><br>
+        <select id="size" name="size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="extra-large">Extra Large</option>
+        </select><br><br>
+
+        <label>Crust Type:</label><br>
+        <input type="radio" id="thin-crust" name="crust" value="thin" checked>
+        <label for="thin-crust">Thin Crust</label><br>
+        <input type="radio" id="thick-crust" name="crust" value="thick">
+        <label for="thick-crust">Thick Crust</label><br>
+        <input type="radio" id="stuffed-crust" name="crust" value="thick">
+        <label for="stuffed-crust">Stuffed Crust</label><br><br>
+
+        <label>Toppings:</label><br>
+        <input type="checkbox" id="topping1" name="toppings" value="pepperoni">
+        <label for="topping1">Pepperoni</label><br>
+        <input type="checkbox" id="topping2" name="toppings" value="mushrooms">
+        <label for="topping2">Mushrooms</label><br>
+        <input type="checkbox" id="topping3" name="toppings" value="onions">
+        <label for="topping3">Onions</label><br>
+        <input type="checkbox" id="topping4" name="toppings" value="sausage">
+        <label for="topping4">Sausage</label><br>
+        <input type="checkbox" id="topping5" name="toppings" value="bacon">
+        <label for="topping5">Bacon</label><br>
+        <input type="checkbox" id="topping6" name="toppings" value="mozzarella">
+        <label for="topping6">Mozzarella</label><br><br>
+
+        <input type="submit" value="Order">
+    </form>
+
+    <p id="result"></p>
+    <p id="myInfo"></p>
+  </body>
+</html>
